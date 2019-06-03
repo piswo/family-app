@@ -1,0 +1,48 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+body {
+  padding-top: 60px;
+  font-family: serif;
+}
+
+#logo {
+ float: left;
+ margin-right: 10px;
+ font-size: 1.7em;
+ color: #000;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ padding-top: 9px;
+ font-weight: bold;
+}
+
+  /* forms */
+
+  h1 {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  small {
+    text-align: center;
+  }
+}
+
+footer ul li {
+  list-style: none;
+  float: left;
+  margin-right: 10px
+}
