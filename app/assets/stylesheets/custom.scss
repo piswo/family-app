@@ -3,19 +3,28 @@
 
 
 body {
-  padding-top: 60px;
+  padding-top: 70px;
   font-family: serif;
+  background-color: #FFEFD5;
 }
 
+header {
+  padding-bottom: 10px;
+
+}
+
+.nav {
+  padding-top: 10px;
+}
 #logo {
  float: left;
  margin-right: 10px;
- font-size: 1.7em;
+ font-size: 2.0em;
  color: #000;
  text-transform: uppercase;
- letter-spacing: -1px;
- padding-top: 9px;
- font-weight: bold;
+ padding-top: 15px;
+ font-family: cursive;
+ text-shadow: 2px 2px 2px #000;
 }
 
   /* forms */
@@ -34,15 +43,14 @@ input, textarea, select, .uneditable-input {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #000;
   color: #777;
   small {
-    text-align: center;
+    float: left;
   }
-}
-
-footer ul li {
-  list-style: none;
-  float: left;
-  margin-right: 10px
+  nav ul li {
+    list-style: none;
+    float: right;
+    margin-right: 10px;
+  }
 }
