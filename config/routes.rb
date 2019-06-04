@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root "users#new"
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  root 'homes#home'
+  get '/help', to: 'homes#help'
+  get '/contact', to: 'homes#contact'
   resources :users
 end
