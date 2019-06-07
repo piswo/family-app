@@ -1,25 +1,33 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 html {
-  position: relative;
+  position:relative;
   min-height: 100%;
-
 }
-
 body {
+
   padding-top: 60px;
   font-family: serif;
   background-color: #FFDBC9;
+
+}
+
+.container {
+  width: auto;
 }
 
 h1 {
+  padding-top: 15px;
   line-height: normal;
   text-align: center;
 }
 
+
 #logo {
  float: left;
+
  margin-right: 10px;
  font-size: 2.0em;
  color: #FF5F17;
@@ -27,6 +35,7 @@ h1 {
  padding-top: 15px;
  font-family: cursive;
  text-shadow: 2px 2px 2px #000;
+
 }
 
 
@@ -36,21 +45,15 @@ input, textarea{
   margin-bottom: 15px;
 }
 
-.footer {
-position: absolute;
+#error-messages {
+  color: red;
+}
+
+footer {
+position:absolute;
 bottom: 0;
 width: 100%;
-height: 80px;
-}
-
-.container {
-  width: auto;
-  padding: 0 15px;
-}
-
-
-.container .text-muted {
-  margin: 20px 0;
+height: 60px;
 }
 
 small {
@@ -58,19 +61,23 @@ small {
   color: white;
 }
 
-ul li {
+ul {
   list-style: none;
   float: right;
-  padding: 10px
+  margin-right: 5px;
+  li {
+    float: left;
+    margin-left: 15px;
+  }
 }
 
  .jumbotron-extend {
-   position: relative;
    height: 100vh;
    background: url(family.jpg) no-repeat center center;
    background-size: cover;
-   display: flex;
-	 align-items: center;
    color: #FF5F17;
+ }
 
+ .gravatar {
+   margin-left: 15px;
  }
