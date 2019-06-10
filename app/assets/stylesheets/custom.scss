@@ -7,7 +7,6 @@ html {
   min-height: 100%;
 }
 body {
-
   padding-top: 60px;
   font-family: serif;
   background-color: #FFDBC9;
@@ -27,15 +26,12 @@ h1 {
 
 #logo {
  float: left;
-
  margin-right: 10px;
  font-size: 2.0em;
  color: #FF5F17;
  text-transform: uppercase;
  padding-top: 15px;
  font-family: cursive;
- text-shadow: 2px 2px 2px #000;
-
 }
 
 
@@ -50,24 +46,18 @@ input, textarea{
 }
 
 footer {
-position:absolute;
-bottom: 0;
-width: 100%;
-height: 60px;
-}
-
-small {
-  text-align: center;
-  color: white;
-}
-
-ul {
-  list-style: none;
-  float: right;
-  margin-right: 5px;
-  li {
-    float: left;
-    margin-left: 15px;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-right: 5px;
+    li {
+      margin: 10px;
+    }
   }
 }
 
@@ -80,4 +70,5 @@ ul {
 
  .gravatar {
    margin-left: 15px;
+   margin-right: 15px;
  }
