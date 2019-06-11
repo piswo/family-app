@@ -1,16 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
-html {
-  position:relative;
-  min-height: 100%;
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+
+
 body {
   padding-top: 60px;
   font-family: serif;
-  background-color: #FFDBC9;
-
 }
 
 .container {
@@ -39,6 +40,7 @@ input, textarea{
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
+
 }
 
 #error-messages {
@@ -46,22 +48,28 @@ input, textarea{
 }
 
 footer {
-  position:absolute;
-  bottom: 0;
-  width: 100%;
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #000;
   height: 60px;
+  a {
+    color: #FF5F17;
+    &:hover {
+      color: blue;
+    }
+  }
   ul {
     list-style: none;
     float: right;
-    display: flex;
-    margin-right: 5px;
+    padding-right: 5px;
     li {
-      margin: 10px;
+      float:left;
+      margin-left: 15px;
     }
   }
 }
 
- .jumbotron-extend {
+.jumbotron-extend {
    height: 100vh;
    background: url(family.jpg) no-repeat center center;
    background-size: cover;
@@ -72,3 +80,10 @@ footer {
    margin-left: 15px;
    margin-right: 15px;
  }
+
+ .users {
+  list-style: none;
+  li {
+    padding: 10px 0;
+  }
+}
