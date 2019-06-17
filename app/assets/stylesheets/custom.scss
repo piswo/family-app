@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding-top: 60px;
   font-family: serif;
+  background-color: ghostwhite;
 }
 
 .container {
@@ -14,6 +15,7 @@ body {
 
 h1 {
   padding-top: 15px;
+  margin-bottom: 15px;
   line-height: normal;
   text-align: center;
 }
@@ -68,6 +70,11 @@ footer {
    background: url(family.jpg) no-repeat center center;
    background-size: cover;
    color: #FF5F17;
+ }
+
+ .center {
+   text-align: center;
+   margin-top: 80px;
  }
 
  .gravatar {
