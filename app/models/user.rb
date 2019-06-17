@@ -6,9 +6,11 @@ class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: 20 }
   validates :email, presence: true, length: { maximum: 100 }, uniqueness: true,
             format: { with: VALID_EMAIL_REJEX }
-  validates :password, presence: true, length: { minimum: 6 }
+  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
-  def email_downcase
-    self.email = email.downcase
-  end
+  private
+
+    def email_downcase
+      self.email = email.downcase
+    end
 end
