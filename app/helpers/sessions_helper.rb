@@ -12,6 +12,11 @@ module SessionsHelper
     end
   end
 
+   #現在のログインユーザーならtrue
+   def current_user?(user)
+     user == current_user
+   end
+
   #ログイン時true
   def logged_in?
     !current_user.nil?
